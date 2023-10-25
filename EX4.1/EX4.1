@@ -1,0 +1,22 @@
+while(True):
+    
+
+
+    try:
+        Gauge = input(" INput fuel in format x/y: ")
+        x = int(Gauge[0])
+        division = Gauge[1]
+        y = int(Gauge[2])
+        if division == "/":
+            answer = ((x/y)*100)
+            if answer <= 1:
+                print("E")
+            elif answer >= 99:
+                print("F")
+            else:
+                x = int(answer)
+                print(str(x)+"%")
+    except ValueError:
+        print("x and y must be integers")
+    except ZeroDivisionError:
+        print("aximum fuel tank cant be 0")

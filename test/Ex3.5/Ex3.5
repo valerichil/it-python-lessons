@@ -1,0 +1,11 @@
+# make dictionary with calories
+while(True):
+    FDA_list = [
+        {"name":"apple", "calories":"130"},
+        {"name":"avacado","calories":"50"},
+        {"name":"cherries","calories":"100"},
+    ]
+    check = input("Enter fruit name: ").lower()
+    for fruit in FDA_list:
+        if check == fruit["name"]:
+            print("Calories: ",fruit["calories"])
